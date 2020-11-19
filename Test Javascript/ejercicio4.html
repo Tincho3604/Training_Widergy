@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    
+    <h1>Facturas Adeudadas</h1>
+        
+    <div class="bills">
+        <table id="data">
+            <tr>
+                <th>Codigo</th>
+                <th>Total</th>
+                <th>Recargo</th>
+            </tr>
+        </table>              
+    </div>
+      
+    
+      <div id="inputs">
+        <label for="pay">Ingrese $ disponible para abonar</label>
+        <input type="number" id="pay" name="cash" placeholder="Monto Disponible" onchange="cuotas(this.value)">
+        <button onclick="cuotas()">Pagar</button>
+      
+        <label>Seleccione las cuotas a abonar</label>
+        <select name="payments" id="options"> 
+        </select>
+    </div>
+      
+    <script src="ejercicio4.js"></script>
+</body>
+</html>
+
