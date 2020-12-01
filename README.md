@@ -5,4 +5,4 @@
 
 - Portfolio (Basico de HTML - Css - Javascript)
 - Test de Javascript (Con ejercicios de todo tipo)
-- Aplicacion de calculadora en React Native (Como proyecto final para cerrar mi etapa de training)
+
