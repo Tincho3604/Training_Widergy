@@ -1,56 +1,56 @@
 # Training-JS
 
-Estos son distintos ejercicios para practicar JavaScript!
+These are different exercises to practice JavaScript!
 
-Luego de codear tu solución corré el comando `yarn test [numero de ejercicio]` (por ejemplo: `yarn test 1`), para ejecutar los tests y saber si tu solución da un resultado correcto!.
+After elbowing your solution, run the command `yarn test [exercise number]` (for example: `yarn test 1`), to run the tests and know if your solution gives a correct result !.
 
-# Enunciados
+# Statements
 
-## Ejercicio 1: Arrays 101
+## Exercise 1: Arrays 101
 
-### sumatoria: (array[num]) => num
+### sum: (array [num]) => num
 
-Calcula la suma de los elementos del array. Por ejemplo si el array es [1, 3, 6, 9] la función devuelve 19.
+Calculate the sum of the elements of the array. For example if the array is [1, 3, 6, 9] the function returns 19.
 
-### reverso: (array[X]) => array[X]
+### reverse: (array [X]) => array [X]
 
-Devuelve el reverso. Por ejemplo si el array es [1, 2, 3] devuelve [3, 2, 1].
+Returns the reverse. For example if the array is [1, 2, 3] it returns [3, 2, 1].
 
-### rotaciones: (array[X], num) => array[X]
+### rotations: (array [X], num) => array [X]
 
-Definimos rotación como el shift de los numeros de un array a la izquierda. Por ejemplo si nuestro array es: [1, 2, 3, 4, 5] y queremos rotarlo 2 veces el resultado es: [3, 4, 5, 1, 2].
+We define rotation as the shift of the numbers in an array to the left. For example, if our array is: [1, 2, 3, 4, 5] and we want to rotate it 2 times, the result is: [3, 4, 5, 1, 2].
 
-### mesetaMasLarga: (array[X]) => num
+### plateauMasLarga: (array [X]) => num
 
-Definimos meseta como la secuencia de valores iguales consecutivos. La idea de esta función es devolver la meseta más larga. Por ejemplo si nuestro array es: [1, 2, 2, 3, 3, 3, 3, 3, 4, 5, 5, 5, 3] el resultado esperado es 5.
+We define plateau as the sequence of consecutive equal values. The idea of ​​this function is to return the longest plateau. For example, if our array is: [1, 2, 2, 3, 3, 3, 3, 3, 4, 5, 5, 5, 3] the expected result is 5.
 
 ---
 
-## Ejercicio 2: Funciones, Loops y Arrays
+## Exercise 2: Functions, Loops and Arrays
 
-### f1: (array[num]) => array[num]
+### f1: (array [num]) => array [num]
 
-Donde cada elemento del array devuelto contiene la mitad de cada elemento del array de entrada.
+Where each element of the returned array contains half of each element of the input array.
 
-### f2: (array[num], func) => array[num]
+### f2: (array [num], func) => array [num]
 
-Donde cada elemento del array devuelto es el elemnto correspondiente del array de entrada al que se aplico la funcion recibida por parametro.
+Where each element of the returned array is the corresponding element of the input array to which the function received by parameter was applied.
 
-### f3: (array[num], num) => array[num]
+### f3: (array [num], num) => array [num]
 
-Donde el array devuelto contiene solo a los numeros mayores a el numero recibido por parametro.
+Where the returned array contains only the numbers greater than the number received by parameter.
 
-### f4: (array[num], func) => array[num]
+### f4: (array [num], func) => array [num]
 
-Donde el array devuelto contiene solo a los numeros que cumplen la funcion recibida por parametro, es decir devuelven verdadero si les aplicamos esta funcion.
+Where the returned array contains only the numbers that fulfill the function received by parameter, that is, they return true if we apply this function to them.
 
-### f5: (array[num], num) => num
+### f5: (array [num], num) => num
 
-Donde el numero devuelto es el primero que es menor que el numero recibido por parametro, en caso de no encontrarlo devuelve -1.
+Where the number returned is the first that is less than the number received by parameter, in case of not finding it, it returns -1.
 
-### f6: (array[num], func) => num
+### f6: (array [num], func) => num
 
-Donde el numero devuelto es el primero que cumple la funcion devuelta por parametro.
+Where the number returned is the first one that fulfills the function returned by parameter.
 
 ---
 
