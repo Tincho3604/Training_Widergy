@@ -1,5 +1,5 @@
 # Portfolio
-_En este Test se me pidio crear un portfolio compuesto por un div que contenga información sobre mi y una pequeña descripcción y abajo y iconos con los links de mis redes sociales._
+_In this Test I was asked to create a portfolio composed of a div containing information about me and a small description and below and icons with the links of my social networks._
 ```
 - git clone
 - Run index.html
