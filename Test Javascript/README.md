@@ -54,104 +54,103 @@ Where the number returned is the first one that fulfills the function returned b
 
 ---
 
-## Ejercicio 3: Arrays multidimensionales
+## Exercise 3: Multidimensional Arrays
 
-### máximo: (array[array[num]]) => num
+### maximum: (array [array [num]]) => num
 
-Devuelve el valor máximo de la matriz.
+Returns the maximum value of the array.
 
-### multiplicarMatrices: (array[array[num]], array[array[num]]) => array[array[num]]
+### multiplyMatrices: (array [array [num]], array [array [num]]) => array [array [num]]
 
-Devuelve la multiplicación de las matrices. Supongan que siempre reciben matrices con las dimensiones correctas para multiplicarse. (https://www.mathsisfun.com/algebra/matrix-multiplying.html).
+Returns the multiplication of the matrices. Suppose you always receive matrices with the correct dimensions to multiply. (https://www.mathsisfun.com/algebra/matrix-multiplying.html).
 
-### esDegrade: (array[array[num]]) => bool
+### isDegrade: (array [array [num]]) => bool
 
-Devuelve true si la matriz es un degrade.
-Definimos degrade de la siguiente manera: Una matriz donde todas las celdas de la diagonal tienen el mismo valor y los números a la derecha son más chicos y a la izquierda más grande.
-Por ejemplo: La siguiente matriz es un degrade:
+Returns true if the array is a degrade.
+We define degrade as follows: A matrix where all the cells on the diagonal have the same value and the numbers on the right are smaller and on the left are larger.
+For example: The following matrix is ​​a degrade:
 [[4, 6, 8, 19]
 [2, 4, 9, 40]
 [1, 2, 4, 10]
-[-2,0, 2, 4 ]]
-La matriz vacia es considerada un degrade.
+[-2.0, 2, 4]]
+The empty matrix is ​​considered a degrade.
 
-### esDamero: (Tablero) => bool
+### isDamero: (Board) => bool
 
-Definimos Tablero como la matriz de 1 y 0 (array[array[num]]). El tablero vacio no es damero.
-Esta función evuelve true si el tablero de entrada es un tablero alternado de celdas negras y blancas.
+We define Board as the matrix of 1 and 0 (array [array [num]]). The empty board is not a checkerboard.
+This function returns true if the input board is an alternating black and white cell board.
 
-### esDameroRegular (Tablero) => bool
+### isRegularQuantity (Board) => bool
 
-Devuelve true si el tablero de entrada es un tablero damero y es una matriz cuadrada (El alto de la matriz es igual al largo).
-
----
-
-## Ejercicio 4: Arrays y html
-
-Todos los htmls de este codigo los pueden devolver como strings pelados.
-Un usuario quiere poder ver sus facturas, una factura se representa por un codigo que puede tener letras y numeros (un string) y por un valor que representa cuanto se debe pagar en el perido de la factura.
-
-## ¿Como representarias una factura?
-
-### ¿Como visualizarias una factura con html?
-
-Es razonable esperar que el usuario tenga mas de una factura para visualizar, pero este es un número que no sabemos.
-
-### ¿Como harias para visualizar todas las facturas?
-
-
-Luego de implementar esta vista los chicos de funcional se dieron cuenta que faltaban algunos datos y nos pidieron que implementemos un par de funciones adicionales.
-Lo primero que quieren que agregemos es una calculadora de interes,
-para esto debemos mostrar ademas del valor y el codigo de cada factura cuanto sera su valor en caso de no ser pagada antes del vencimiento. El cliente definio que el interes agregado sera de 3,5%.
-
-Ademas quieren que agregemos una funcionalidad que le indique al usuario cuantas facturas puede pagar dada una cantidad determinada de dinero.
-Por ejemplo si tenemos dos facturas que adeudan $600 y una $100 y solo contamos con \$700 las unicas facturas que podremos pagar son la segunda y una de las dos primeras (Es indiferente cual).
-
-Las chicas de diseño todavia no definieron como se vera esta ultima funcionalidad asi que por ahora solo debemos agregar la logica.
+Returns true if the input board is a checkerboard and it is a square matrix (The height of the matrix is ​​equal to the length).
 
 ---
 
-## Ejercicio 5: Strings
+## Exercise 4: Arrays and html
 
-### capitalizar: (string) => string
+All the htmls in this code can be returned as strings.
+A user wants to be able to see his invoices, an invoice is represented by a code that can have letters and numbers (a string) and by a value that represents how much must be paid in the period of the invoice.
 
-Capitaliza todas las palabras del string. Por ejemplo si el string es 'hola mundo widergy' el resultado deberia ser 'Hola Mundo Widergy'.
+## How would you represent an invoice?
 
-### inverso: (string) => string
+### How would you view an invoice with html?
 
-Devuelve el inverso de la frase (Las palabras estan separadas por un ' '). Por ejemplo para 'Hola Mundo Widergy' su inverso seria: 'Widergy Mundo Hola'.
+It is reasonable to expect that the user has more than one invoice to view, but this is a number that we do not know.
 
-### sanitizar: (string, string) => string
+### How would you go about viewing all the invoices?
 
-Sanitiza en el primer string todas las apariciones del segundo. Por ejemplo si recibimos 'Este es un ejercicio de prueba' y 'prueba' el resultado seria: 'Ese es un ejercicio de ######' (Pueden suponer que el segundo string nunca es vacio).
 
-### contarArrays: (array[string], array[string]) => array[num]
+After implementing this view the functional guys realized that some data was missing and asked us to implement a couple of additional functions.
+The first thing they want us to add is an interest calculator,
+For this we must show in addition to the value and the code of each invoice how much its value will be if it is not paid before expiration. The client defined that the aggregate interest will be 3.5%.
 
-Cuenta la aparicion de los strings del segundo array en el primero.
-Por ejemplo si recibimos ['aba', 'baba', 'aba', 'xzxb'] y ['aba', 'ab', 'xzxb'] entonces debemos devolver [2, 0, 1] ya que 'aba' aparece dos veces, 'ab' ninguna y 'xzxb' una. (Pueden suponer que el segundo array nunca esta vacio).
+They also want us to add a functionality that tells the user how many bills he can pay given a given amount of money.
+For example, if we have two invoices that owe $ 600 and one $ 100 and we only have $ 700, the only invoices that we can pay are the second and one of the first two (It does not matter which one).
 
-### esSubsecuencia: (string, string) => bool
+The design girls have not yet defined what this last functionality will look like so for now we just have to add the logic.
 
-Devuelve true si el segundo string es subsecuencia del primero (Pueden suponer que el segundo string no es vacio)
+---
+## Exercise 5: Strings
+
+### capitalize: (string) => string
+
+Capitalize all the words in the string. For example if the string is 'hello world widegy' the result should be 'hello world widegy'.
+
+### inverse: (string) => string
+
+Returns the inverse of the phrase (Words are separated by a ''). For example, for 'Hello World Widergy' its inverse would be: 'Widergy World Hello'.
+
+### sanitize: (string, string) => string
+
+Sanitizes all occurrences of the second string in the first string. For example, if we receive 'This is a test exercise' and 'test' the result would be: 'This is a ###### exercise' (You can assume that the second string is never empty).
+
+### countArrays: (array [string], array [string]) => array [num]
+
+Count the appearance of the strings of the second array in the first.
+For example if we receive ['aba', 'baba', 'aba', 'xzxb'] and ['aba', 'ab', 'xzxb'] then we must return [2, 0, 1] since 'aba' appears twice, 'ab' none and 'xzxb' once. (You can assume that the second array is never empty).
+
+### isSubsequence: (string, string) => bool
+
+Returns true if the second string is a subsequence of the first (You can assume that the second string is not empty)
 
 ---
 
-## Ejercicio 6: Objetos 101
+## Exercise 6: Objects 101
 
-### listar: (Object) => string
+### list: (Object) => string
 
-Lista un objeto como un string. Por ejemplo para {a: 1, b: 2} el resultado de listar seria 'a: 1, b: 2'
+List an object as a string. For example for {a: 1, b: 2} the result of listing would be 'a: 1, b: 2'
 
-### invertir: (Object) => Object
+### invert: (Object) => Object
 
-Devuelve un objeto cuyas keys sean los valores y viceversa.
+Returns an object whose keys are the values ​​and vice versa.
 
-### ordenarPorId (array[Object]) => array[Object]
+### sortById (array [Object]) => array [Object]
 
-Dado un array de objetos que tengan un atributo numerico "id" ordenar el array según el mismo (Pueden asumir que no se repiten los ids si les es más facil).
+Given an array of objects that have a numeric attribute "id", sort the array according to it (You can assume that the ids are not repeated if it is easier for you).
 
-### Una utility quiere agregar un nuevo menu a su oficina virtual. Este menu contara con una cantidad determinada de subOpciones (Que tienen la misma estructura que una Opcion), un titulo y una funcion que ejecuta cuando es seleccionado.
+### A utility wants to add a new menu to its virtual office. This menu will have a certain amount of subOptions (which have the same structure as an Option), a title and a function that it executes when it is selected.
 
-Desarrollar una función que imprima (en la consola) el menu de forma que se pueda visualizar todo el arbol de opciones (Pudiendo discernir que opcion es hijo de cual y a que nivel pertenece)
+Develop a function that prints (in the console) the menu so that the entire tree of options can be displayed (Being able to discern which option is a child of which and to what level it belongs)
 
-### Usando el menu definido en el punto anterior: Se agrego a cada opcion un flag que indique si el usuario puede visualizar esa opcion. Desarrollar una función que devuelva la primera opción visible (Esta seria la primer hoja donde todos sus padres son visibles, en un arbol donde todos los nodos son visibles seria la hoja más a la izquierda).
+### Using the menu defined in the previous point: A flag was added to each option that indicates if the user can view that option. Develop a function that returns the first visible option (This would be the first leaf where all its parents are visible, in a tree where all the nodes are visible it would be the leftmost leaf).
